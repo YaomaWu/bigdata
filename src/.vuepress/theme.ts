@@ -7,21 +7,30 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "Mr.Hope",
+    name: "妖码",
     url: "https://mister-hope.com",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/images/page/d2.jpg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/YaomaWu",
+  repoLabel: "GitHub",
 
   docsDir: "src",
 
-  // 导航栏
+  // 顶部导航与侧边栏
   navbar,
-
-  // 侧边栏
   sidebar,
+
+  // 顶部栏布局：左品牌，中链接，右仓库/主题切换/搜索
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Repo", "Outlook", "Search"],
+  },
+
+  // 夜间/白天主题切换
+  darkmode: "switch",
 
   // 页脚
   footer: "默认页脚",
@@ -29,43 +38,17 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
-    intro: "/intro.html",
+    description: "一个大数据开发",
+    // intro 页面已移除
     medias: {
-      Baidu: "https://example.com",
-      BiliBili: "https://example.com",
-      Bitbucket: "https://example.com",
-      Dingding: "https://example.com",
-      Discord: "https://example.com",
-      Dribbble: "https://example.com",
-      Email: "mailto:info@example.com",
-      Evernote: "https://example.com",
-      Facebook: "https://example.com",
-      Flipboard: "https://example.com",
-      Gitee: "https://example.com",
-      GitHub: "https://example.com",
-      Gitlab: "https://example.com",
-      Gmail: "mailto:info@example.com",
-      Instagram: "https://example.com",
-      Lark: "https://example.com",
-      Lines: "https://example.com",
-      Linkedin: "https://example.com",
-      Pinterest: "https://example.com",
-      Pocket: "https://example.com",
-      QQ: "https://example.com",
-      Qzone: "https://example.com",
-      Reddit: "https://example.com",
-      Rss: "https://example.com",
-      Steam: "https://example.com",
-      Twitter: "https://example.com",
-      Wechat: "https://example.com",
-      Weibo: "https://example.com",
-      Whatsapp: "https://example.com",
-      Youtube: "https://example.com",
-      Zhihu: "https://example.com",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
+      Zhihu: "https://www.zhihu.com/people/your-id",
+      Juejin: {
+        icon: "simple-icons:juejin",
+        link: "https://juejin.cn/user/your-id",
+      },
+      CSDN: {
+        icon: "https://g.csdnimg.cn/static/logo/favicon32.ico",
+        link: "https://blog.csdn.net/your-id",
       },
     },
   },
@@ -88,7 +71,7 @@ export default hopeTheme({
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
-  // 此处开启了很多功能用于演示，你应仅保留用到的功能。
+  // 此处开启了很多功能用于演示，你应仅保留用到的功能
   markdown: {
     align: true,
     attrs: true,
@@ -138,8 +121,6 @@ export default hopeTheme({
     // 在启用之前安装 chart.js
     // chartjs: true,
 
-    // insert component easily
-
     // 在启用之前安装 echarts
     // echarts: true,
 
@@ -163,9 +144,13 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
+    // 目录插件配置，交由主题注册
+    catalog: {
+      level: 3,
+      index: false,
+    },
 
     // 启用之前需安装 @waline/client
-    // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
     // comment: {
     //   provider: "Waline",
     //   serverURL: "https://waline-comment.vuejs.press",

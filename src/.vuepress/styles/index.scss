@@ -1,1 +1,163 @@
 // place your custom styles here
+
+/* Homepage custom layout */
+.home-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* Polish VPCard visuals */
+.vp-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.vp-card .vp-card-title {
+  font-weight: 700;
+}
+
+/* Catalog page: make list look like cards grid */
+.vp-catalog {
+  margin-top: 1rem;
+}
+
+.vp-catalog-main-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.vp-catalog-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.vp-catalog-item {
+  background: var(--vp-c-bg-alt, var(--c-bg));
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider, #eee);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  padding: 14px 16px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.vp-catalog-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.10);
+  border-color: var(--vp-c-brand, #3eaf7c);
+}
+
+.vp-catalog-title {
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+/* Hide noisy header anchor mark in cards */
+.vp-catalog-header-anchor {
+  display: none;
+}
+
+/* Child catalogs as mini cards grid */
+.vp-child-catalogs {
+  list-style: none;
+  padding: 0;
+  margin-top: .5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: .75rem;
+}
+
+.vp-child-catalog {
+  background: var(--vp-c-bg, var(--c-bg));
+  border: 1px solid var(--vp-c-divider, #eee);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.vp-catalog-sub-title {
+  font-weight: 600;
+}
+
+/* Sub catalogs inline pills */
+.vp-sub-catalogs,
+.vp-sub-catalogs-wrapper {
+  margin-top: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .5rem;
+}
+
+.vp-sub-catalog,
+.vp-sub-catalog-link {
+  background: var(--vp-c-bg, var(--c-bg));
+  border: 1px solid var(--vp-c-divider, #eee);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+/* Homepage custom layout */
+.home-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* Fine tune VPCard visuals */
+.vp-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+.vp-card .vp-card-title {
+  font-weight: 700;
+}
+
+/* Sidebar polish */
+.vp-sidebar {
+  padding: 10px 10px 18px;
+  background: var(--vp-c-bg-soft, transparent);
+  border-right: 1px solid var(--vp-c-divider, #eee);
+}
+
+.vp-sidebar .sidebar-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vp-sidebar .sidebar-group > .title,
+.vp-sidebar .sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 8px 10px;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.vp-sidebar .sidebar-group > .title:hover,
+.vp-sidebar .sidebar-link:hover {
+  background: var(--vp-c-bg, #f6f7f9);
+}
+
+.vp-sidebar .sidebar-link.active {
+  color: var(--vp-c-brand, var(--theme-color, #3eaf7c));
+  background: rgba(62, 175, 124, .12);
+  font-weight: 600;
+}
+
+.vp-sidebar .sidebar-group > .title [class*="icon"],
+.vp-sidebar .sidebar-link [class*="icon"] {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.dark .vp-sidebar .sidebar-group > .title:hover,
+.dark .vp-sidebar .sidebar-link:hover {
+  background: rgba(255, 255, 255, .06);
+}

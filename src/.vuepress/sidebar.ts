@@ -1,26 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
+// 使用基于目录结构的自动侧边栏，无需手动配置新目录/页面
 export default sidebar({
-  "/": [
-    "",
-    {
-      text: "如何使用",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
-      text: "文章",
-      icon: "book",
-      prefix: "posts/",
-      children: "structure",
-    },
-    "intro",
-    {
-      text: "幻灯片",
-      icon: "person-chalkboard",
-      link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
-    },
-  ],
+  "/posts/": "structure",
+  "/guide/": "structure",
 });
