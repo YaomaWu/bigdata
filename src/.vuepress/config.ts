@@ -3,7 +3,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/bg-guide/",
+  base: "/bigdata/",
 
   lang: "zh-CN",
   title: "妖码大数据",
