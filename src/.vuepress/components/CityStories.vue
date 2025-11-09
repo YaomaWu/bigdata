@@ -145,7 +145,7 @@ const renderChart = async () => {
       '成都': 'chengdu',
     }
     const slug = slugMap[name] || encodeURIComponent(name.toLowerCase())
-    const next = `${base}${slug}/`
+    const next = withBase(`${base}${slug}/`)
     window.location.href = next
   })
 }
