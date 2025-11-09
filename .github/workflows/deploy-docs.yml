@@ -29,6 +29,10 @@ jobs:
           corepack enable
           npm ci
 
+      - name: 压缩与生成 WebP（图片优化）
+        run: |
+          npm run imgs:opt
+
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
