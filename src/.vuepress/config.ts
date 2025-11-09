@@ -7,7 +7,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "妖码大数据",
-  description: "大数据与流处理笔记",
+  description: "「大数据学习 + 面试指南」涵盖 大数据 程序员需要掌握的核心知识",
   head: [],
 
   theme,

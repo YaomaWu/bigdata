@@ -4,7 +4,7 @@ title: 首页
 icon: house
 heroImage: /assets/images/page/d2.jpg
 heroText: 妖码 · 大数据
-tagline: 大数据学习 + 面试指南
+tagline: 「大数据学习 + 面试指南」涵盖 大数据 程序员需要掌握的核心知识
 actions:
   - text: 开始阅读
     link: /posts/
@@ -34,12 +34,12 @@ footer: 默认页脚
   <VPCard
     title="个人信息"
     icon="fa6-solid:user"
-    desc="姓名：妖码<br>职位：大数据工程师<br>坐标：缅因<br>技术栈：班门弄斧，有点皮毛"
+    desc="姓名：妖码<br>职位：仅工作不到一年的数据人<br>技术栈：班门弄斧，有点皮毛"
   />
   <VPCard
     title="联系方式"
     icon="fa6-solid:address-card"
-    desc="邮箱：844125774@qq.com<br>GitHub：https://github.com/YaomaWu"
+    desc="邮箱：tom.jerry.fly@gmail.com<br>GitHub：https://github.com/YaomaWu"
   />
   <VPCard
     title="这个网站做什么？"

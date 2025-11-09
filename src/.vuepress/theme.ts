@@ -7,13 +7,13 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "妖码",
+    name: "Mr.Hope",
     url: "https://mister-hope.com",
   },
 
   logo: "/assets/images/page/d2.jpg",
 
-  repo: "https://github.com/YaomaWu/bigdata.git",
+  repo: "https://github.com/YaomaWu",
   repoLabel: "GitHub",
 
   docsDir: "src",
@@ -33,22 +33,17 @@ export default hopeTheme({
   darkmode: "switch",
 
   // 页脚
-  footer: "默认页脚",
+  footer: "共进共勉，与光同行",
   displayFooter: true,
 
   // 博客相关
   blog: {
-    description: "一个大数据开发者",
-    // intro 页面已移除
+    description: "一个前端开发者",
+    intro: "/intro.html",
     medias: {
-      Zhihu: "https://www.zhihu.com/people/your-id",
-      Juejin: {
-        icon: "simple-icons:juejin",
-        link: "https://juejin.cn/user/your-id",
-      },
-      CSDN: {
-        icon: "https://g.csdnimg.cn/static/logo/favicon32.ico",
-        link: "https://blog.csdn.net/your-id",
+      VuePressThemeHope: {
+        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        link: "https://theme-hope.vuejs.press",
       },
     },
   },
@@ -63,25 +58,15 @@ export default hopeTheme({
     },
   },
 
-  // 多语言配置（避免出现 undefined: 日期 的情况）
+  // 多语言配置
   metaLocales: {
-    author: "作者",
-    date: "写作日期",
-    origin: "原创",
-    views: "访问量",
-    category: "分类",
-    tag: "标签",
-    readingTime: "阅读时间",
-    words: "字数",
-    toc: "此页内容",
-    prev: "上一页",
-    next: "下一页",
-    contributors: "贡献者",
-    editLink: "编辑此页",
-    print: "打印",
+    editLink: "在 GitHub 上编辑此页",
   },
 
-  // 仅保留常用 Markdown 扩展
+  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
+  // hotReload: true,
+
+  // 此处开启了很多功能用于演示，你应仅保留用到的功能
   markdown: {
     align: true,
     attrs: true,
@@ -114,15 +99,50 @@ export default hopeTheme({
     tabs: true,
     tasklist: true,
     vPre: true,
+
+    // 取消注释它们如果你需要 TeX 支持
+    // math: {
+    //   // 启用前安装 katex
+    //   type: "katex",
+    //   // 或者安装 @mathjax/src
+    //   type: "mathjax",
+    // },
+
+    // 如果你需要幻灯片，安装 @vuepress/plugin-revealjs 并取消下方注释
+    // revealjs: {
+    //   plugins: ["highlight", "math", "search", "notes", "zoom"],
+    // },
+
+    // 在启用之前安装 chart.js
+    // chartjs: true,
+
+    // 在启用之前安装 echarts
+    // echarts: true,
+
+    // 在启用之前安装 flowchart.ts
+    // flowchart: true,
+
+    // 在启用之前安装 mermaid
+    // mermaid: true,
+
+    // playground: {
+    //   presets: ["ts", "vue"],
+    // },
+
+    // 在启用之前安装 @vue/repl
+    // vuePlayground: true,
+
+    // 在启用之前安装 sandpack-vue3
+    // sandpack: true,
   },
 
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
-    // 目录插件配置
+    // 目录插件配置，交由主题注册
     catalog: {
       level: 3,
-      index: false,
+      index: true,
     },
 
     // 启用之前需安装 @waline/client
@@ -139,6 +159,61 @@ export default hopeTheme({
       prefix: "fa6-solid:",
     },
 
-    // 如需 PWA，请手动开启并配置 @vuepress/plugin-pwa
+    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
+    // pwa: {
+    //   favicon: "/favicon.ico",
+    //   cacheHTML: true,
+    //   cacheImage: true,
+    //   appendBase: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-icon-152.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/ms-icon-144.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/chrome-mask-512.png",
+    //         sizes: "512x512",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-mask-192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-512.png",
+    //         sizes: "512x512",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-192.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //     shortcuts: [
+    //       {
+    //         name: "Demo",
+    //         short_name: "Demo",
+    //         url: "/demo/",
+    //         icons: [
+    //           {
+    //             src: "/assets/icon/guide-maskable.png",
+    //             sizes: "192x192",
+    //             purpose: "maskable",
+    //             type: "image/png",
+    //           },
+    //         ],
+    //       },
+    //     ],
+    //   },
+    // },
   },
 });
