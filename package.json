@@ -18,5 +18,11 @@
     "vue": "^3.5.22",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-hope": "2.0.0-rc.98"
+  },
+  "dependencies": {
+    "@pixelium/web-vue": "0.0.2-fix",
+    "china-geojson": "1.0.0",
+    "echarts": "6.0.0",
+    "echarts-china-provinces-js": "1.0.0"
   }
 }

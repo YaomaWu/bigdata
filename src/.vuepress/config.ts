@@ -8,15 +8,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "妖码大数据",
   description: "大数据与流处理笔记",
-  head: [
-    [
-      "script",
-      {
-        async: "",
-        src: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",
-      },
-    ],
-  ],
+  head: [],
 
   theme,
 

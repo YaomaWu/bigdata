@@ -1,17 +1,18 @@
 import { defineClientConfig } from "vuepress/client";
-import { createApp } from "vue";
-import PvBadge from "./components/PvBadge.vue";
 import HotList from "./components/HotList.vue";
 import GradJobs from "./components/GradJobs.vue";
+import CityStories from "./components/CityStories.vue";
 
 export default defineClientConfig({
   enhance({ app }) {
     // 注册自定义组件，供 Markdown 使用
     app.component("HotList", HotList);
     app.component("GradJobs", GradJobs);
+    app.component("CityStories", CityStories);
   },
   setup() {
-    if (typeof window === "undefined") return;
+    // disable PV badge mounting completely
+    return;
 
     const findNavbarEnd = () =>
       document.querySelector(".vp-navbar-end") ||
