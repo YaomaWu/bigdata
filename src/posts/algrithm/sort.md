@@ -1,6 +1,6 @@
 ---
 icon: message
-title: suanfa 基础与术语
+title: 常见算法
 date: 2025-01-01
 category:
   - Kafka
