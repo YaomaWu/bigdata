@@ -10,8 +10,9 @@ export default defineUserConfig({
   head: [
     [
       "script",
-      {},
-      `window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\\(', '\\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] } };`,
+      {
+        src: "/bigdata/mathjax-config.js",
+      },
     ],
     [
       "script",
