@@ -81,6 +81,9 @@ export default hopeTheme({
     tabs: true,
     tasklist: true,
     vPre: true,
+    math: {
+      type: "mathjax",
+    },
   },
 
   // 主题插件
@@ -100,4 +103,3 @@ export default hopeTheme({
     },
   },
 });
-

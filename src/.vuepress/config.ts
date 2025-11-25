@@ -1,5 +1,4 @@
 import { defineUserConfig } from "vuepress";
-
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -8,7 +7,21 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "妖码大数据",
   description: "「大数据学习 + 面试指南」涵盖 大数据 程序员需要掌握的核心知识",
-  head: [],
+  head: [
+    [
+      "script",
+      {},
+      `window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\\(', '\\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] } };`,
+    ],
+    [
+      "script",
+      {
+        id: "MathJax-script",
+        async: "true",
+        src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      },
+    ],
+  ],
 
   
   theme,
